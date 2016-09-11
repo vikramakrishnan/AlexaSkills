@@ -53,7 +53,7 @@ exports.handler = function(event, context, callback) {
 
 var handlers = {
     'LaunchRequest': function () {
-        this.emit('GetFact');
+        this.emit('AMAZON.HelpIntent');
     },
     'GetNewFactIntent': function () {
         this.emit('GetFact');
@@ -69,7 +69,7 @@ var handlers = {
         this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomFact)
     },
     'AMAZON.HelpIntent': function () {
-        var speechOutput = "You can say tell me an India trivia, or, you can say exit... What can I help you with?";
+        var speechOutput = "You can say tell me a fact about India, or, you can say exit... What can I help you with?";
         var reprompt = "What can I help you with Smrithi?";
         this.emit(':ask', speechOutput, reprompt);
     },
