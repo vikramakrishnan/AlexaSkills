@@ -74,7 +74,7 @@ var handlers = {
         this.emit(':ask', speechOutput, reprompt);
     },
     'AMAZON.CancelIntent': function () {
-        this.emit(':tell', 'Bye Smrithi!');
+        this.emit('AMAZON.StopIntent');
     },
     'AMAZON.StopIntent': function () {
         this.emit(':tell', 'Goodbye Smrithi!');
