@@ -1,0 +1,17 @@
+{
+  "name": "capitals-game",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alexa-sdk": "^1.0.5",
+    "countrynames": "^0.1.1",
+    "request": "^2.74.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}

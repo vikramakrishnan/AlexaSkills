@@ -1,0 +1,37 @@
+{
+  "intents": [
+    {
+      "intent": "WhatsTheCapitalIntent",
+      "slots": [
+        {
+          "name": "country",
+          "type": "COUNTRYNAMES"
+        }
+      ]
+    },
+    {
+      "intent": "PlayCapitalTriviaIntent"
+    },
+    {
+      "intent": "AnswerIntent",
+      "slots": [
+        {
+          "name": "capital",
+          "type": "COUNTRYNAMES"
+        }
+      ]
+    },
+    {
+      "intent": "DontKnowIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}

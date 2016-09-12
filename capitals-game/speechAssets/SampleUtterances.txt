@@ -1,0 +1,21 @@
+WhatsTheCapitalIntent capital of {country}
+WhatsTheCapitalIntent tell me the capital of {country}
+WhatsTheCapitalIntent what is the capital of {country}
+WhatsTheCapitalIntent find out the capital of {country}
+
+PlayCapitalTriviaIntent play
+PlayCapitalTriviaIntent start trivia
+
+AnswerIntent {capital}
+AnswerIntent is it {capital}
+AnswerIntent answer is {capital}
+
+
+DontKnowIntent i don't know
+DontKnowIntent don't know
+DontKnowIntent skip
+DontKnowIntent i don't know that
+DontKnowIntent who knows
+DontKnowIntent i don't know this question
+DontKnowIntent i don't know that one
+DontKnowIntent dunno
