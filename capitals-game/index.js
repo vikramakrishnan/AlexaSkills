@@ -129,9 +129,9 @@ function handleAnswers(userGaveUp) {
 			console.log(this.attributes['country']);
 			this.emit('AMAZON.StopIntent');
 		} else {
-			console.log('capital is ' + capital);
 			if (!userGaveUp) {
 				var givenAnswer = this.event.request.intent.slots.capital.value;
+				console.log("U Told " + givenAnswer);
 				if (givenAnswer == capital) {
 					speechOutput = 'Correct: ';
 					this.attributes['answered'] = this.attributes['answered'] + 1;

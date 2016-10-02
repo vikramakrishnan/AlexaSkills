@@ -66,7 +66,7 @@ var handlers = {
         // Create speech output
         var speechOutput = " " + randomFact;
 
-        this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomFact)
+        this.emit(':tellWithCard', speechOutput, SKILL_NAME, randomFact);
     },
     'AMAZON.HelpIntent': function () {
         var speechOutput = "You can say tell me a fact about India, or, you can say exit... What can I help you with?";
@@ -74,9 +74,15 @@ var handlers = {
         this.emit(':ask', speechOutput, reprompt);
     },
     'AMAZON.CancelIntent': function () {
-        this.emit('AMAZON.StopIntent');
+        this.emit('SessionEndedRequest');
     },
     'AMAZON.StopIntent': function () {
-        this.emit(':tell', 'Goodbye Smrithi!');
+        this.emit('SessionEndedRequest');
+    },
+    'SessionEndedRequest' : function() {
+        this.emit(':tell', 'Goodbye!!');
+    },
+    'Unhandled' : function() {
+        this.emit('SessionEndedRequest');
     }
 };

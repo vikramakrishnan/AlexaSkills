@@ -17,7 +17,7 @@
       "slots": [
         {
           "name": "capital",
-          "type": "COUNTRYNAMES"
+          "type": "CAPITALS"
         }
       ]
     },
